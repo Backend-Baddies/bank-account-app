@@ -1,21 +1,50 @@
 const checkingAccounts = [
     {
         balance: 324234234,
-        transactions: [],
-        // user_id: null,
-    }
+    },
+    {
+        balance: 32424,
+    },
+    {
+        balance: 999999999,
+    },
+];
+
+const savingsAccounts = [
+    {
+        balance: 100000,
+    },
+    {
+        balance: 20000,
+    },
+    {
+        balance: 359999,
+    },
 ];
 
 const users = [
     {
         name: "John Jackson",
         phone_number: "212-650-4323",
-        email: "",
-        address: "",
+        email: "john.jackson@email.com",
+        address: "1212 N Howe St Crazytown PA 44444",
+    },
+    {
+        name: "Cornelius Waldorf",
+        phone_number: "858-555-2565",
+        email: "cwaldorf45@email.com",
+        address: "555 W Brooklyn St Crazytown PA 44444",
+    },
+    {
+        name: "Cruella DeVille",
+        phone_number: "218-626-5689",
+        email: "cruelladv@email.com",
+        address: "8913 E Dalmatian Way Crazytown PA 44444",
     }
 ];
 
 module.exports = {
     checkingAccounts,
+    savingsAccounts,
     users,
 };

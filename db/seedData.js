@@ -49,6 +49,37 @@ const users = [
     }
 ];
 
+const transacCheckingAccounts = [
+    {
+        transaction: "ChickFilA  -28.50",
+    },
+    {
+        transaction: "Nike  -300.75",
+    },
+    {
+        transaction: "Transfer from Savings Account +40,000.80",
+    },
+    {
+        transaction: "Transfer from Savings Account +500.00",
+    },
+];
+
+const transacSavingsAccounts = [
+    {
+        transaction: "Direct Deposit +10,000.00",
+    },
+    {
+        transaction: "Transfer to Checking Account -500.00",
+    },
+    {
+        transaction: "Transfer to Checking Account -40,000.80",
+    },
+    {
+        transaction: "Transfer from HYSA Account +5,000.00",
+    },
+
+];
+
 module.exports = {
     checkingAccounts,
     savingsAccounts,

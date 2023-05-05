@@ -9,4 +9,4 @@ const User = sequelize.define('user', {
     phone_number: Sequelize.INTEGER
 })
 
-module.exports = {User};
+module.exports = User;

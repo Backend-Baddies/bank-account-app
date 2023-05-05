@@ -1,14 +1,14 @@
 /** @format */
 
-const { User } = require("./User");
-const { Checking } = require("./Checking");
-const { Saving } = require("./Saving");
+const  User  = require("./User");
+const  Checking  = require("./Checking");
+// const { Savings } = require("./Savings");
 
 Checking.belongsTo(User);
 User.hasMany(Checking);
 
-Saving.belongsTo(User);
-User.hasMany(Saving);
+// Savings.belongsTo(User);
+// User.hasMany(Savings);
 
 Transactions.belongsTo(Checking);
 Checking.hasMany(Transactions);
@@ -18,7 +18,9 @@ Savings.hasMany(Transactions);
 
 module.exports = {
   User,
-  Savings,
+
+  // Savings,
+
   Checking,
   Transactions,
 };

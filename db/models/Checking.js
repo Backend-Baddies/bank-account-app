@@ -1,4 +1,4 @@
-const { database } = require('../db');
+const { sequelize } = require('../db');
 const { DataTypes } = require('sequelize');
 
 const Checking = sequelize.define('checkings', {
@@ -6,7 +6,11 @@ const Checking = sequelize.define('checkings', {
         type: DataTypes.INTEGER,
         allowNull: false,
 
+    },
+    accountNumber: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
     }
 })
 
-module.exports = { Checking };
+module.exports =  Checking ;

@@ -1,7 +1,7 @@
-const { database } = require('../db');
+const { sequelize } = require('../db');
 const {DataTypes} = require('sequelize');
 
-const Saving = sequelize.define('savings', {
+const Savings = sequelize.define('savings', {
     balance: {
         type: DataTypes.INTEGER,
         allowNull: false,
@@ -9,4 +9,4 @@ const Saving = sequelize.define('savings', {
     }
 })
 
-module.exports = {Saving};
+module.exports = {Savings};

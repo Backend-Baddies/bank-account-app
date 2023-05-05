@@ -64,21 +64,23 @@ const transacCheckingAccounts = [
     },
 ];
 
-const transacSavingsAccounts = [
-    {
-        transaction: "Direct Deposit +10,000.00",
-    },
-    {
-        transaction: "Transfer to Checking Account -500.00",
-    },
-    {
-        transaction: "Transfer to Checking Account -40,000.80",
-    },
-    {
-        transaction: "Transfer from HYSA Account +5,000.00",
-    },
 
-];
+// const transacSavingsAccounts = [
+//     {
+//         transaction: "Direct Deposit +10,000.00",
+//     },
+//     {
+//         transaction: "Transfer to Checking Account -500.00",
+//     },
+//     {
+//         transaction: "Transfer to Checking Account -40,000.80",
+//     },
+//     {
+//         transaction: "Transfer from HYSA Account +5,000.00",
+//     },
+
+// ];
+
 
 module.exports = {
     checkingAccounts,

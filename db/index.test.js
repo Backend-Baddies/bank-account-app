@@ -21,6 +21,23 @@ describe ("Checking, Savings, and User Models", () => {
     });
 
 
+    test('a User can create a checking account', async () => {
+        const userEmail = await User.create(users[2]);
+        expect(user.email).toEqual("cruelladv@email.com");
+    });
+
+test('a User can create a checking account', async () => {
+        
+        expect(user.email).toEqual("cruelladv@email.com");
+    });
+
+    test('a User can create a checking account', async () => {
+    
+        expect().toEqual();
+    });
+
+
+
       // User testing for CRUD (READ)
     
 
@@ -44,15 +61,26 @@ describe ("Checking, Savings, and User Models", () => {
         expect(savAcctTrans[2]).toEqual('Transfer to Checking Account -40,000.80')
     });
 
-    // User testing for CRUD (DELETE)
 
+    // User testing for CRUD (UPDATE)
 
-    //Ask the girls for clarification for this one. 
-
-    test('a User can delete their entire account', async () => {
-        const 
-        expect('test').toEqual('expectedData')
+    test('a User update their address', async () => {
+        const updatedAddress = await User.update();
+        expect(updatedAddress[0].address).toEqual("123 Hollow Road St")
     });
+
+    test('a User can update their email', async () => {
+        const updatedEmail = await User.update();
+        expect(updatedEmail[0].email).toEqual('myemail@gmail.com')
+    });
+
+    test('a User can update their phone number', async () => {
+        const updatedNumber = await User.update();
+        expect(updatedNumber[0].phone_number).toEqual('998-364-2836')
+    });
+
+    // User testing for CRUD (DELETE)
+    
 
     test('a User can delete checking account', async () => {
         const foundCheckAcct = await Checking.findAll();

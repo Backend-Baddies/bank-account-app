@@ -5,14 +5,8 @@ app.use(express.json());
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 
-app.get('/', (req, res, next) => {
-    try {
-        res.send('Success -- home')
-    } catch (err) {
-        console.error(err);
-        next(err);
-    }
-});
+const usersRouter = require("./routes/users/users.js")
+app.use("/users", usersRouter)
 
 app.use((error, req, res, next) => {
     console.error('SERVER ERROR: ', error);

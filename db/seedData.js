@@ -64,6 +64,7 @@ const transacCheckingAccounts = [
     },
 ];
 
+
 // const transacSavingsAccounts = [
 //     {
 //         transaction: "Direct Deposit +10,000.00",
@@ -79,6 +80,7 @@ const transacCheckingAccounts = [
 //     },
 
 // ];
+
 
 module.exports = {
     checkingAccounts,

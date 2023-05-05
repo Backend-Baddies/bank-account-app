@@ -20,6 +20,7 @@ describe ("Checking, Savings, and User Models", () => {
         expect(user.email).toEqual("cruelladv@email.com");
     });
 
+
     test('a User can create a checking account', async () => {
         const userEmail = await User.create(users[2]);
         expect(user.email).toEqual("cruelladv@email.com");
@@ -34,6 +35,7 @@ test('a User can create a checking account', async () => {
     
         expect().toEqual();
     });
+
 
 
       // User testing for CRUD (READ)
@@ -59,6 +61,7 @@ test('a User can create a checking account', async () => {
         expect(savAcctTrans[2]).toEqual('Transfer to Checking Account -40,000.80')
     });
 
+
     // User testing for CRUD (UPDATE)
 
     test('a User update their address', async () => {
@@ -78,6 +81,7 @@ test('a User can create a checking account', async () => {
 
     // User testing for CRUD (DELETE)
     
+
     test('a User can delete checking account', async () => {
         const foundCheckAcct = await Checking.findAll();
         const deleteCheckAcct = await foundCheckAcct[0].destroy();

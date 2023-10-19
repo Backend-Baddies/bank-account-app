@@ -10,11 +10,11 @@ User.hasMany(Checking);
 // Savings.belongsTo(User);
 // User.hasMany(Savings);
 
-Transactions.belongsTo(Checking);
-Checking.hasMany(Transactions);
+// Transactions.belongsTo(Checking);
+// Checking.hasMany(Transactions);
 
-Transactions.belongsTo(Savings);
-Savings.hasMany(Transactions);
+// Transactions.belongsTo(Savings);
+// Savings.hasMany(Transactions);
 
 module.exports = {
   User,
@@ -22,5 +22,5 @@ module.exports = {
   // Savings,
 
   Checking,
-  Transactions,
+  // Transactions,
 };
